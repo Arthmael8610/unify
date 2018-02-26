@@ -198,6 +198,15 @@ title: "Bootstrap Test"
         </div>
       </div>
 
+      <!-- Try some Jekyll -->
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
     </main>
 
     <!-- JS Global Compulsory -->
