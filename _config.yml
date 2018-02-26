@@ -18,4 +18,4 @@ repository               : "stefansonntag/unify" # GitHub username/repo-name e.g
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 
 # jekyll
-Destination: "../Jekyll"
+destination: "../Jekyll"
