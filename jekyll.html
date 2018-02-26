@@ -199,13 +199,6 @@ title: "Bootstrap Test"
       </div>
 
       <!-- Try some Jekyll -->
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
 
       <div class="page__comments">
         {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
@@ -376,6 +369,19 @@ title: "Bootstrap Test"
             <section id="custom-comments"></section>
         {% endcase %}
       </div>
+
+      <div class="u-shadow-v1-3 g-line-height-2 g-pa-40 g-mb-30" role="alert">
+        <h3 class="h2 g-font-weight-300 g-mb-20">Box Shadow</h3>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a class="mb-0" href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+
 
     </main>
 
