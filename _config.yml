@@ -7,48 +7,39 @@
 
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Success in Technical Sales Management"
-title_separator          : "-"
-name                     : "Stefan Sonntag"
-description              : "A collection of what is needed to run a successful technical sales organization"
-url                      : "https://stefansonntag.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "unify" # the subpath of your site, e.g. "/blog"
-repository               : "stefansonntag/unify" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+locale                    : "en-US"
+title                     : "Success in Technical Sales Management"
+title_separator           : "-"
+name                      : "Stefan Sonntag"
+description               : "A collection of what is needed to run a successful technical sales organization"
+url                       : "https://stefansonntag.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                   : "unify" # the subpath of your site, e.g. "/blog"
+repository                : "stefansonntag/unify" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                    : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+menutext1                 : "Home"
+menufile1                 : "index.html"
+menutext2                 : "Presales"
+menufile2                 : "presales.html"
+menutext3                 : "People"
+menufile3                 : "people.html"
+menutext4                 : "Platform"
+menufile4                 : "platform.html"
+menutext5                 : "Process"
+menufile5                 : "process.html"
+menutext6                 : "Product"
+menufile6                 : "product.html"
+menutext7                 : "About"
+menufile7                 : "about.html"
+menutext8                 : ""
+menufile8                 : "comingsoon.html"
+menutext9                 : ""
+menufile9                 : "comingsoon.html"
+
+
+
+atom:
+  buildCommand:
+    - /usr/local/bin/jekyll
 
 # jekyll
-destination: "../../Jekyll"
-
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
+destination: "/Library/WebServer/Documents/baseline"

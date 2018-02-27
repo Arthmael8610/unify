@@ -1,0 +1,28 @@
+---
+comments: "true"
+title: "Product"
+showsplash: "true"
+splashbackground: "assets/img-temp/process1.jpg"
+splashtextmain: "Product"
+splashtextsub: "How do we ramp up and enable?"
+splashtextposition: 5
+splashtextwidth: 7
+splashcolor: "black"
+showcontent: "true"
+---
+<div> <!-- Header include  -->
+  {% include_relative assets/include/myfiles/head.html %}
+  {% if page.showcontent == "true" %}
+</div>
+
+<!-- // Content starts here // -->
+
+<!-- Main Content Section -->
+
+<!-- End Main Content Section -->
+
+<!-- // Content stops here // -->
+
+<div> <!-- Footer include  -->
+  {% endif %}
+  {% include_relative assets/include/myfiles/foot.html %}</div>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Title -->
+    <title>{{page.title}}</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+    <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css">
+
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="assets/css/unify-core.css">
+    <link rel="stylesheet" href="assets/css/unify-components.css">
+    <link rel="stylesheet" href="assets/css/unify-globals.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/vendor/slick-carousel/slick/slick.css">
+  </head>
+
+  <body>
+    <main>
+
+      <!-- Header -->
+      <header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance" data-header-fix-moment="300">
+        <div class="u-header__section u-header__section--dark g-bg-black-opacity-0_4 g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-bg-black-opacity-0_4 g-py-10" data-header-fix-moment-classes="g-bg-black-opacity-0_7 g-py-0">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <!-- Responsive Toggle Button -->
+              <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                <span class="hamburger hamburger--slider">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+                </span>
+              </button>
+              <!-- End Responsive Toggle Button -->
+
+              <!-- Logo -->
+              <a href="index.html" class="navbar-brand">
+                <img src="assets/img/logo/logo-2.png" alt="Image Description">
+              </a>
+              <!-- End Logo -->
+
+              <!-- Navigation -->
+              <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
+                <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="{{site.menufile1}}" class="nav-link px-0">{{site.menutext1}}
+                    </a>
+                  </li>
+
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="{{site.menufile2}}" class="nav-link px-0">{{site.menutext2}}
+                    </a>
+                  </li>
+
+                  <li class="nav-item g-mx-20--lg active">
+                    <a href="{{site.menufile3}}" class="nav-link px-0">{{site.menutext3}}
+                    </a>
+                  </li>
+
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="{{site.menufile4}}" class="nav-link px-0">{{site.menutext4}}
+                    </a>
+                  </li>
+
+                  <li class="nav-item g-mx-20--lg">
+                    <a href="{{site.menufile5}}" class="nav-link px-0">{{site.menutext5}}
+                    </a>
+                  </li>
+
+                  <li class="nav-item g-ml-20--lg g-mr-0--lg">
+                    <a href="{{site.menufile6}}" class="nav-link px-0">{{site.menutext6}}
+                    </a>
+                  </li>
+
+                <li class="nav-item g-ml-20--lg g-mr-0--lg">
+                    <a href="{{site.menufile7}}" class="nav-link px-0">{{site.menutext7}}
+                  </a>
+                </li>
+
+                </ul>
+              </div>
+              <!-- End Navigation -->
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Promo Block -->
+      <div>
+        {% if page.showsplash == "true" %}
+          <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall " data-options='{direction: "reverse", settings_mode_oneelement_max_offset: "150"}'>
+        <div class="divimage dzsparallaxer--target w-100 g-bg-pos-bottom-center" style="height: 120%; background-image: url({{page.splashbackground}});"></div>
+
+        <div class="container g-py-200 ">
+          <div class="row">
+            <div class="col-md-{{page.splashtextposition}}"></div>
+            <div class="col-md-{{page.splashtextwidth}}">
+              <h3 class="g-color-{{page.splashcolor}} g-font-weight-300 g-font-size-40 g-line-height-1_2 mb-4">{{page.splashtextmain}}
+            <br>
+            <!-- you may put something here if you need more text -->
+          </h3>
+              <span class="d-block g-color-{{page.splashcolor}}-opacity-0_8 g-font-size-16 mb-5">{{page.splashtextsub}}</span>
+              <!-- <a class="js-fancybox u-link-v5 g-color-black" href="javascript:;" data-src="//vimeo.com/167434033" data-speed="350" data-caption="Single Image">
+                <span class="align-middle u-icon-v3 u-block-hover--scale g-bg-white g-color-black g-color-primary--hover g-rounded-50x g-cursor-pointer mr-2">
+              <i class="g-font-size-18 g-pos-rel g-left-2 fa fa-play"></i> -->
+            </span>
+                <!-- 1:41 minutes -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+        {% endif %}
+      </div>
+
+      <!-- End Promo Block -->
