@@ -13,7 +13,7 @@ title_separator           : "-"
 name                      : "Stefan Sonntag"
 description               : "A collection of what is needed to run a successful technical sales organization"
 url                       : "https://stefansonntag.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                   : "unify" # the subpath of your site, e.g. "/blog"
+baseurl                   : "/unify" # the subpath of your site, e.g. "/blog"
 repository                : "stefansonntag/unify" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                    : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 menutext1                 : "Home"
@@ -42,4 +42,5 @@ atom:
     - /usr/local/bin/jekyll
 
 # jekyll
-destination: "/Library/WebServer/Documents/baseline"
+# destination: "/Library/WebServer/Documents/baseline"
+destination: "_site"
