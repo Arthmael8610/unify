@@ -11,7 +11,7 @@ splashcolor: "black"
 showcontent: "true"
 ---
 <div> <!-- Header include  -->
-  {% include_relative assets/include/myfiles/head.html %}
+  {% include head.html %}
   {% if page.showcontent == "true" %}
 </div>
 
@@ -25,4 +25,4 @@ something should happen now
 
 <div> <!-- Footer include  -->
   {% endif %}
-  {% include_relative assets/include/myfiles/foot.html %}</div>
+  {% include foot.html %}</div>
